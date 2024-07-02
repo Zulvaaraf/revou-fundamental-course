@@ -33,10 +33,89 @@
         </nav>
     </header>
     <main>
-
+        <section class="container-banner">
+            <h2 class="banner-headline">Hi Name, Welcome to Website</h2>
+            <div class="banner">
+                <img src="asset/images.jpg" alt="">
+            </div>
+        </section>
+        <section class="container-facilitations">
+            <h2 class="facilitations-headline">Our Facilitations</h2>
+            <div class="facilitations">
+                <div class="facilitations-item">
+                    <div class="facilitations-images">Z</div>
+                    <p class="facilitations-text">Teacher</p>
+                </div>
+                <div class="facilitations-item">
+                    <div class="facilitations-images">Z</div>
+                    <p class="facilitations-text">Sport Field</p>
+                </div>
+                <div class="facilitations-item">
+                    <div class="facilitations-images">Z</div>
+                    <p class="facilitations-text">Classroom</p>
+                </div>
+            </div>
+        </section>
+        <section class="container-forms">
+            <h2 class="facilitations-headline">Messages Us</h2>
+            <section class="form-content">
+                <div class="forms-input">
+                    <form id="form" method="post">
+                        <label for="nama">Fullname : </label>
+                        <input type="text" id="name" name="nama" required>
+                        <br>
+                        <label for="date">Date : </label>
+                        <input type="date" id="date" name="date" required>
+                        <br>
+                        <label for="gender">Gender : </label>
+                        <select id="gender" name="gender" required>
+                            <option value="Male">Laki-laki</option>
+                            <option value="Female">Perempuan</option>
+                        </select>
+                        <br>
+                        <label for="message">Pesan : </label>
+                        <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                        <br>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                <div class="forms-output">
+                    <table class="container-output">
+                        <tr>
+                            <td>Name </td>
+                            <td>: </td>
+                            <td>
+                                <span id="output-name"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date </td>
+                            <td>: </td>
+                            <td>
+                                <span id="output-date"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender </td>
+                            <td>: </td>
+                            <td>
+                                <span id="output-gender"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Message </td>
+                            <td>:</td>
+                            <td>
+                                <span id="output-message"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
     </main>
     <footer>
-
+        <p class="footer-text">Created By Zulvaaraf</p>
     </footer>
 
     <script src="js/main.js"></script>
