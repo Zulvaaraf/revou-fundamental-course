@@ -19,15 +19,24 @@ formSubmit.addEventListener('submit', (e) => {
   const gender = document.getElementById('gender').value;
   const message = document.getElementById('message').value;
 
-  const outputName = document.getElementById('output-name');
-  const outputDate = document.getElementById('output-date');
-  const outputGender = document.getElementById('output-gender');
-  const outputMessage = document.getElementById('output-message');
+  let isValid = true;
 
-  outputName.textContent = name;
-  outputDate.textContent = date;
-  outputGender.textContent = gender;
-  outputMessage.textContent = message;
+  if (name === '' || date === '') {
+    isValid = false;
+    alert('please fill in all required!');
+  }
 
-  formSubmit.reset();
+  if (isValid) {
+    const outputName = document.getElementById('output-name');
+    const outputDate = document.getElementById('output-date');
+    const outputGender = document.getElementById('output-gender');
+    const outputMessage = document.getElementById('output-message');
+
+    outputName.textContent = name;
+    outputDate.textContent = date;
+    outputGender.textContent = gender;
+    outputMessage.textContent = message;
+
+    formSubmit.reset();
+  }
 });
